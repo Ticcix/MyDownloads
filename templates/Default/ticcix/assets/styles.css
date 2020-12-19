@@ -1,0 +1,176 @@
+/*
+=====================================================
+ MYDownloads - by Ticcix
+-----------------------------------------------------
+ https://ticcix.github.io/
+-----------------------------------------------------
+ Copyright (c) 2020 Ticcix
+=====================================================
+ This code is protected by copyright
+=====================================================
+ File: styles.css
+-----------------------------------------------------
+ Use: MY Downlaods
+=====================================================
+*/
+@import url("https://cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
+
+
+#myInput{
+  margin: 10px;
+  width: 98%;
+  background: #303030;
+  color: #fff;
+  font-family: Bpg Arial Caps;
+}
+
+.table-wrapper{
+    margin: 10px 10px 10px;
+    width: 98%;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.ti-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+    font-family: Bpg Arial Caps;
+}
+
+.ti-table td, .ti-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.ti-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.ti-table thead th {
+    color: #ffffff;
+    background: #FF9800;
+}
+
+
+.ti-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #263238;
+}
+
+.ti-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .ti-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: ">>>";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: #303030;
+        padding: 0 0 10px;
+    }
+    .ti-table thead, .ti-table tbody, .ti-table thead th {
+        display: block;
+    }
+    .ti-table thead th:last-child{
+        border-bottom: none;
+    }
+    .ti-table thead {
+        float: left;
+    }
+    .ti-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .ti-table td, .ti-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .ti-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .ti-table tbody tr {
+        display: table-cell;
+    }
+    .ti-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .ti-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .ti-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .ti-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .ti-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+.ti_footer_button {
+
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #FFC107;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  color: #303030;
+  box-shadow: 0 2px 3px #FFC107;
+  outline: none;
+  font-family: Bpg Arial Caps;
+}
+.ti_footer_button:hover{
+  text-decoration: none;
+  background: #fff;
+  color: #303030;
+  box-shadow: none;
+  box-shadow: 0 2px 3px #FFC107;
+
+}
+.ti_footer_button:active {
+  animation: gradient 100ms;
+  background: #1B5E20;
+  color: #fff;
+  box-shadow: none;
+
+}
+.swal2-title {font-family: Bpg Arial Caps;}
+.swal2-content {
+font-family: Bpg Arial Caps;
+font-size: 14px;
+border: solid 1px #4CAF50;
+border-radius: 4px;
+padding: 5px;
+background: #1B5E20;
+color: white;
+}
